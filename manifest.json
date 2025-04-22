@@ -1,0 +1,70 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.17",
+  "version": "1.0.0",
+  "id": "00000000-0000-0000-0000-000000000000",
+  "packageName": "com.chronos.bot",
+  "name": {
+    "short": "Chronos",
+    "full": "Chronos \u2013 Sprint Timekeeper"
+  },
+  "description": {
+    "short": "Master your sprint time with AI\u2011powered Jira control, reports & daily insights.",
+    "full": "Chronos is the time\u2011guardian for development teams. Chat naturally in Teams to create, update and triage Jira issues, auto\u2011assign tasks, and receive precise AI summaries. A weekly Project\u2011Health report lands in your DM every Monday at 08:00, turning raw metrics into clear actions. Stay punctual, beat deadlines, and keep stakeholders smiling without ever leaving Teams."
+  },
+  "developer": {
+    "name": "Chronos",
+    "websiteUrl": "https://chronos.ai",
+    "privacyUrl": "https://chronos.ai/privacy",
+    "termsOfUseUrl": "https://chronos.ai/terms"
+  },
+  "icons": {
+    "color": "chronos_icon_color.png",
+    "outline": "chronos_icon_outline.png"
+  },
+  "accentColor": "#1F3A93",
+  "bots": [
+    {
+      "botId": "YOUR_BOT_APP_ID",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": [
+            "personal",
+            "team"
+          ],
+          "commands": [
+            {
+              "title": "help",
+              "description": "List available commands"
+            },
+            {
+              "title": "daily summary",
+              "description": "Get today's Jira focus list"
+            },
+            {
+              "title": "setup-weekly-report",
+              "description": "Configure weekly project health report"
+            },
+            {
+              "title": "run-weekly-report",
+              "description": "Send the report now"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "your-ngrok-or-prod-domain.com"
+  ]
+}
