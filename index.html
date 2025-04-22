@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronos – Master your sprint time</title>
+  <!-- Tailwind ↑ CDN build for quick GH‑Pages deploy -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- OG preview -->
+  <meta property="og:title" content="Chronos – Sprint Timekeeper"/>
+  <meta property="og:description" content="AI‑powered Jira control inside Microsoft Teams."/>
+  <meta property="og:image" content="https://raw.githubusercontent.com/<YOUR‑REPO>/assets/chronos_banner.png"/>
+  <link rel="icon" type="image/png" href="chronos_icon_color.png"/>
+</head>
+<body class="font-sans antialiased bg-indigo-50 text-slate-800">
+  <!-- Hero -->
+  <section class="bg-indigo-900 text-white py-16 px-6 text-center">
+    <img src="chronos_icon_color.png" alt="Chronos logo" class="mx-auto w-24 h-24 mb-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-3">Master your sprint time</h1>
+    <p class="text-xl mb-6 max-w-xl mx-auto">Chronos lets you create, triage and summarise Jira work directly from Microsoft Teams.</p>
+    <a href="#contact" class="inline-block bg-amber-400 hover:bg-amber-300 text-indigo-900 font-semibold py-3 px-8 rounded-lg shadow-lg transition">Join the Beta</a>
+  </section>
+
+  <!-- Problem / Solution -->
+  <section class="py-14 px-6 max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+    <div>
+      <h2 class="text-2xl font-bold mb-4">The problem</h2>
+      <p class="mb-3">Context‑switching between chat and Jira steals time and focus. Unassigned tickets linger, weekly status decks take hours, and managers chase velocity spreadsheets.</p>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Chronos solution</h2>
+      <p class="mb-3">Talk to Jira in plain language, auto‑assign unowned tasks and receive AI‑driven daily & weekly insights—delivered right when you need them.</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-14 bg-white px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Key features</h2>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="w-14 h-14 mx-auto mb-3"><img src="icons/chat.svg" alt="Chat"/></div>
+        <h3 class="font-semibold mb-1">Conversational control</h3>
+        <p>Create, comment & assign without leaving Teams.</p>
+      </div>
+      <div>
+        <div class="w-14 h-14 mx-auto mb-3"><img src="icons/daily.svg" alt="Daily"/></div>
+        <h3 class="font-semibold mb-1">Daily focus</h3>
+        <p>Morning summary of tasks you should tackle.</p>
+      </div>
+      <div>
+        <div class="w-14 h-14 mx-auto mb-3"><img src="icons/weekly.svg" alt="Weekly"/></div>
+        <h3 class="font-semibold mb-1">Weekly health report</h3>
+        <p>Velocity & risk card delivered every Monday.</p>
+      </div>
+      <div>
+        <div class="w-14 h-14 mx-auto mb-3"><img src="icons/lock.svg" alt="Secure"/></div>
+        <h3 class="font-semibold mb-1">Secure OAuth</h3>
+        <p>Chronos acts strictly within each user’s Jira rights.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots carousel placeholder -->
+  <section class="py-14 px-6 bg-indigo-50 text-center">
+    <h2 class="text-3xl font-bold mb-8">See it in action</h2>
+    <div class="max-w-4xl mx-auto shadow-lg rounded-xl overflow-hidden">
+      <img src="chronos_banner.png" alt="Screenshot carousel placeholder">
+    </div>
+  </section>
+
+  <!-- Pricing strip -->
+  <section class="py-14 bg-white px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Pricing</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="border rounded-lg p-6">
+        <h3 class="font-bold text-xl mb-2">Free</h3>
+        <p class="text-3xl font-bold">$0</p>
+        <p class="mb-4">Up to 10 active users</p>
+      </div>
+      <div class="border-4 border-amber-400 rounded-lg p-6 bg-amber-50">
+        <h3 class="font-bold text-xl mb-2">Pro</h3>
+        <p class="text-3xl font-bold">$4<span class="text-base">/user·mo</span></p>
+        <p class="mb-4">Unlimited users & projects</p>
+      </div>
+      <div class="border rounded-lg p-6">
+        <h3 class="font-bold text-xl mb-2">Enterprise</h3>
+        <p class="text-3xl font-bold">Custom</p>
+        <p class="mb-4">SSO, SLA, dedicated support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="py-14 px-6 bg-indigo-900 text-white text-center">
+    <blockquote class="max-w-3xl mx-auto text-xl italic">“Chronos shaved hours off our sprint rituals. The weekly card shows exactly what I need before I even join stand‑up.”<br><span class="not-italic text-base">— Emma R., Engineering Manager</span></blockquote>
+  </section>
+
+  <!-- Contact form -->
+  <section id="contact" class="py-16 px-6 text-center bg-white">
+    <h2 class="text-3xl font-bold mb-6">Join the beta</h2>
+    <p class="mb-6">Drop your email and we’ll send an invite.</p>
+    <form id="signupForm" class="max-w-md mx-auto flex flex-col gap-4">
+      <input type="email" name="email" placeholder="you@company.com" required class="border rounded p-3">
+      <button type="submit" class="bg-indigo-900 hover:bg-indigo-800 text-white font-semibold py-3 rounded">Request invite</button>
+      <p id="formMsg" class="text-sm text-green-600 hidden">Thank you! We'll be in touch.</p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-sm bg-indigo-950 text-white">© 2025 Chronos. All rights reserved.</footer>
+
+  <!-- Form handler to Google Sheets via Apps Script web app URL -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/REPLACE_WITH_YOUR_SCRIPT_ID/exec';
+    const form = document.getElementById('signupForm');
+    const msg  = document.getElementById('formMsg');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(() => { msg.classList.remove('hidden'); form.reset(); })
+        .catch(err => alert('Something went wrong—please try again later.'));
+    });
+  </script>
+</body>
+</html>
