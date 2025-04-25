@@ -1,9 +1,11 @@
 {
   "name": "api",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +13,8 @@
   "description": "",
   "dependencies": {
     "@azure/cosmos": "^4.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "passport-azure-ad": "^4.3.5",
     "stripe": "^18.0.0"
